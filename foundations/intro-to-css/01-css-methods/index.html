@@ -7,8 +7,18 @@
     <title>Methods for Adding CSS</title>
   </head>
   <body>
-    <div>Style me via the external method!</div>
-    <p>I would like to be styled with the internal method, please.</p>
-    <button>Inline Method</button>
+    <link rel="stylesheet" href="styles.css">
+    <div class="External"><b>Style me via the external method!</b></div>
+    <p>
+      <style>
+        p {
+          background-color: green;
+          color: white;
+          font-size: 20px;
+          transform: scale(1,0.9);
+        }
+      </style>
+      I would like to be styled with the internal method, please.</p>
+    <button style="background-color: orange; color:black; font-size:20px; border-bottom: 2px solid #837d7c; border-right: 2px solid #837d7c;  border-left: 2px solid #dcdcdc; border-top: 2px solid #dcdcdc; transform: scale(1,0.97)">Inline Method</button>
   </body>
 </html>
